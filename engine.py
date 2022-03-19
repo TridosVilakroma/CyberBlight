@@ -58,12 +58,12 @@ def drop_down(prompt,items={},input_prompt='>'):
             print('\n'+prompt+':')
             for index,item in enumerate(items):
                 print(f'[{index+1}] {item}')
-        selection=input(input_prompt).lower()
+        selection=input(input_prompt)
         try:
             selection = int(selection)-1
             for index,item in enumerate(items):
                 if index == selection:
-                    return item
+                    return items[item]
         except ValueError:
             if selection in items:
                 return items[selection]
@@ -74,3 +74,13 @@ def clear_console():
     '''removes all text from the console preventing scrolling up'''
 
     os.system('cls')
+    print('\n\n')
+
+def jump(amount=1):
+    '''prints new lines
+    
+    new lines are blank spaces between the last thing printed and the next.
+    enter an amount of lines to skip. defaults to 1
+    '''
+    print('\n'*amount)
+

@@ -2,7 +2,7 @@ import engine
 import time
 
 def prologue():
-    engine.slow_type('The world has grown in population and technology.',75)
+    engine.slow_type('The world has grown in population and technology.\n',100)
     time.sleep(1)
     engine.slow_type('''Computers created advanced algorithms that grew 
     in complexity exponentially for centuries.''',100)
@@ -15,12 +15,14 @@ def prologue():
     any percieved benefits the machines have brought.''',150)
     time.sleep(1)
     engine.slow_type('''Hacker groups have formed in response to this cyber blight.
-    They must remain cloaked and agile to avoid detection. ''')
+    They must remain cloaked and agile to avoid detection. ''',150)
     time.sleep(2)
-    engine.slow_type('They are always recruting',25,False)
-    engine.slow_type('.',1,False)
-    engine.slow_type('.',1,False)
-    engine.slow_type('.',1,False)
-    engine.slow_type('.',1,False)
-    time.sleep(10)
-prologue()
+    engine.slow_type('They are always recruting',new_line=False)
+    engine.slow_type('.',new_line=False)
+    time.sleep(.5)
+    engine.slow_type('.',new_line=False)
+    time.sleep(.5)
+    engine.slow_type('.',new_line=False)
+    time.sleep(.5)
+    engine.slow_type('.',new_line=False)
+
