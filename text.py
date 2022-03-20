@@ -26,4 +26,5 @@ def prologue():
     time.sleep(.5)
     engine.slow_type('.',new_line=False)
 
-prologue()
+if __name__=='main':
+    prologue()
