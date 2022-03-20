@@ -1,10 +1,10 @@
 import os,sys,time,random
 from engine import *
 from save_data import data_IO
-import text,character_sheet,console,inventory
+import text,character_sheet,console,inventory,logic_dispatch
 
 clear_console()
-slow_type('\n\n-Welcome to the world of Cyber Blight-\n',1000)
+slow_type('\n\n-Welcome to the world of Cyber Blight-\n',100)
 time.sleep(1)
 profile=drop_down('Select your file',data_IO.existing_files(r'save_data\saves'))
 
@@ -22,11 +22,8 @@ else:
     save_data=data_IO.load(profile)
     clear_console()
 
-def focus_switch():
-    pass
-def aux_state():
-    pass
 while True:
-    focus_switch()
-    aux_state()
+    text.prologue()
+    logic_dispatch.focus_switch()
+    logic_dispatch.aux_state()
 

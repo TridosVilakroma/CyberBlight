@@ -1,5 +1,10 @@
 import os,sys,time,random
 
+class Logic():
+    def __init__(self) -> None:
+        self.focus='console_main_menu'
+game=Logic()
+
 '''these functions should be used throughout the project to automate
 repetetive or complex tasks.
 this is the 'engine' of our game.

@@ -26,3 +26,4 @@ def prologue():
     time.sleep(.5)
     engine.slow_type('.',new_line=False)
 
+prologue()
