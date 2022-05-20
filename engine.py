@@ -70,6 +70,7 @@ def drop_down(prompt,items={},input_prompt='>'):
                 if index == selection:
                     return items[item]
         except ValueError:
+            selection=selection.capitalize()
             if selection in items:
                 return items[selection]
         print('\nThat is not on the list.\nVerify your selection.')

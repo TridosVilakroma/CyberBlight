@@ -23,7 +23,6 @@ else:
     clear_console()
 
 while True:
-    text.prologue()
     logic_dispatch.focus_switch()
     logic_dispatch.aux_state()
 
